@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+    <div class="watch_top">
+        <div class="t_top">
+           <a id="a1" href="#">正品保障,免息分期！</a>
+           <a href="#">请登录</a>
+           <a id="a2" href="#">注册即送3500元大礼包</a>
+           <a href="#">购物车</a>
+           <a href="#">客服服务</a>
+           <a href="#">会员福利</a>
+           <a href="#">会员福利</a>
+           <a href="#">ENGLISH</a>
+          </div>
+    </div>
+    <div class="watch_top2">
+       <div class="t_top2"> 
+          <a href="#"><img src="image/logo-icon (1).png"></a>
+          <div class="t_top3">
+            <h4>瑞士爱宝时官方旗舰店</h4>
+            <span>自营</span>  
+            <p>销量60527 粉丝14609</p>
+          </div>
+          <div class="t_top4">
+            <input type="text" placeholder="搜索 品牌/系列/型号">
+            <button>搜万表</button>
+            <button id="b1">搜本店</button>
+          </div>
+       </div>
+    </div>
+    <div class="watch_top3">
+       <div class="nav">
+           <ul>
+               <li><a href="#">首页</a></li>
+               <li><a href="#">商品</a></li>
+               <li><a href="#">男士腕表</a></li>
+               <li><a href="#">女士腕表</a></li>
+               <li><a href="#">店长推选</a></li>
+               <li><a href="#">情侣对表</a></li>
+               <li><a href="#">抢购专区</a></li>
+               <li><a href="#">新品上市</a></li>
+               <li><a href="#">预售</a></li>
+               <li><a href="#">怀表专区</a></li>
+           </ul>
+       </div>
+    </div>
+    <div class="watch_center">
+      <div class="center1">  
+        <p>首页 > 爱宝时 > 瑞士艺术制表大师爱宝时（EPOS）-Emotion情感系列 日夜无间 3390.302.20.38.25 机械男表 </p>
+        <div>
+          <span>自营</span>
+          <p>瑞士爱宝时旗舰店 |</p>
+          <a href="#"> + 关注</a>
+        </div>
+      </div> 
+      <div class="center2">  
+            <div class="center_left">    
+              <div class="c_left1">
+                 <div class="touming"></div> 
+                 <div class="none"></div>  
+                 <img src="image/center.jpg">
+                 <div class="none"></div>              
+              </div>
+              
+              <div class="center_left2">
+                  <span><img src="image/icon-a-g-left02.png"></span>
+               <div>  
+                 <ul class="uls">
+                    <li><img src="image/center.jpg"></li>
+                    <li><img src="image/list2.jpg"></li>
+                    <li><img src="image/list3.jpg"></li>
+                    <li><img src="image/list4.jpg"></li>
+                    <li><img src="image/list5.jpg"></li>
+                 </ul>
+               </div> 
+                 <span><img src="image/icon-a-g-right01.png"></span>
+              </div>
+            </div> 
+        
+       <script>
+          var ul=document.getElementsByClassName("uls")[0]
+          var lis=ul.querySelectorAll("ul li")
+          var mddiv=document.getElementsByClassName("c_left1")[0]
+          var touming=document.querySelector(".touming")
+          var motai=mddiv.querySelector(".none")
+          var lgdiv=mddiv.querySelector(".c_left1>div:last-child")
+          for(var li of lis){
+              li.onmouseover=function(){
+                 var li=this
+                 if(li.className=="lis"){
+                   li.className=""
+                 }else{
+                   var open=document.querySelector("ul li.lis")
+                   open!=null&&(open.className="")
+                   li.className="lis"               
+                   mddiv.children[2].src=li.children[0].src
+                   lgdiv.style.backgroundImage=`url(${mddiv.children[2].src})`
+                  
+                 }
+             }             
+          }
+         
+         touming.onmousemove=function(e){
+           motai.className=""
+           lgdiv.className=""
+           var top=e.offsetY-90
+           var left=e.offsetX-85
+           if(top<0){
+             top=5
+           }else if(top>292){
+             top=292
+           }
+           if(left<0){
+             left=0
+           }else if(left>320){
+             left=320
+           }
+           motai.style.left=left+"px"
+           motai.style.top=top+"px"       
+           lgdiv.style.backgroundPosition=`${-left*2}px ${-top*2}px`
+         }
+         touming.onmouseout=function(){
+           motai.className="none"
+           lgdiv.className="none"
+         }
+         
+
+           
+
+
+       </script>
+
+
+              <div class="center_right">
+                 <h3>瑞士艺术制表大师爱宝时（EPOS）-Emotion情感系列 日夜无间 3390.302.机械男表</h3>
+                 <div class="c_right1">
+                    <span>型号: 3390 302 20 38 25</span>
+                    <span>编号: 42500</span>
+                    <span>品牌: 爱宝时</span>
+                    <span>销量: 1120</span>
+                 </div>
+                 <div class="c_right2">
+                   <p>
+                     <span>万表价</span>
+                     <span>￥ 8860</span>
+                     <s>￥1,1500</s>
+                   </p>
+                   <p>
+                     <span>分期</span>
+                     <span>每月666.7元x12期</span>
+                     <a href="#">(免息手续费)</a>
+                   </p> 
+                   <p>
+                     <span>领劵</span>
+                     <a href="#"> ¥100  618平台购物津贴</a>
+                     <a href="#">更多</a>
+                   </p> 
+                   <p>
+                     <span>促销</span>
+                     <span>618年中大促！每满1000减100！</span>
+                   </p> 
+                 </div>
+                 <div class="c_right3">
+                   <p>
+                      <span>配送</span>
+                      <span>顺丰包邮</span>
+                      <span>16:45前支付 预计1-3个工作日内发货 支持货到付款</span>
+                   </p>
+                   <p>
+                      <span>承诺</span>
+                      <i></i> <a href="javascript:;">正品保障</a>
+                      <i></i> <a href="javascript:;">正规发票</a>
+                      <i></i> <a href="javascript:;">假一赔三</a>
+                      <i></i> <a href="javascript:;">7天退换</a>
+                      <i></i> <a href="javascript:;">全球联保</a>
+                      <i></i> <a href="javascript:;">免息分期</a>
+                      <i></i> <a href="javascript:;">实体店体验</a>
+                      <i></i> <a href="javascript:;">闪电发货</a>
+                      <i></i> <a href="javascript:;">货到付款</a>
+                   </p>
+                   <p>
+                      <span>服务</span>
+                      <a href="javascript:;">万表名匠保修</a>
+                      <a href="javascript:;">更多低价名表</a>
+                   </p>
+                   <p>
+                      <span>款式</span>
+                      <a href="javascript:;">
+                          <img src="image/d1.jpg">
+                          <span>真皮 灰色 牛皮</span>
+                      </a>
+                      <a href="javascript:;">
+                          <img src="image/d2.jpg">
+                          <span>真皮 白色 牛皮</span>
+                      </a>   
+                   </p>
+                   <p id="app">
+                      <span>数量</span>
+                      <button>-</button>
+                      <input type="text" value="1">
+                      <button>+</button>
+                   </p>
+                 </div>
+
+              <script>
+                 var table=document.getElementById("app")
+                 var btns=table.getElementsByTagName("button")
+                 for(var btn of btns){
+                    btn.onclick=function(){
+                      var btn=this
+                      var input=table.children[2]
+                      var n=parseInt(input.value);
+                      if(btn.innerHTML=="+"){
+                        n++
+                      }else if(n>0){
+                        n--
+                      }
+                      input.value=n
+                    }
+                 }
+              </script>
+
+         
+
+
+                 <div class="c_right4">
+                    <button onclick="shop()">立即购买</button>
+                    <button>加入购物车</button>
+                 </div>
+              </div>
+      </div>
+
+      <script>
+         function shop(){
+           window.location.href="shopping.html"
+         }
+      </script>
+
+      <div class="center3">
+         <a href="javascript:;"><img src="image/guang.jpg"></a>        
+      </div>
+      <div class="center4">
+         <div class="lower_left">
+            <div class="lower1">瑞士爱宝时官方旗舰店</div>
+            <div class="lower2">
+                <div><img src="image/gao.jpg"></div>
+                <div>
+                    <ul>
+                      <li>全部商品 <span>428</span></li>
+                      <li>&nbsp;&nbsp;&nbsp;&nbsp;累计销量 <span>60527</span></li>
+                      <li>&nbsp;&nbsp;&nbsp;&nbsp;关注数<span>&nbsp;&nbsp;&nbsp;&nbsp;14609</span></li>
+                    </ul>
+                </div>
+                <div class="lower2_1">
+                    <a href="javascript:;">进店逛逛</a>
+                    <span></span>
+                    <a href="javascript:;">联系客服</a>
+                </div>
+            </div>
+            <div class="lower1">店内搜索</div>
+            <div class="lower3">
+              <div>
+                <span>关键字</span>
+                <input type="text">
+              </div>  
+              <div>
+                <span>价格区间</span>
+                <input type="text">
+                <span>-</span>
+                <input type="text">
+              </div>
+              <div> 
+                <a href="javascript:;">搜索</a>
+              </div>   
+            </div> 
+            <div class="lower1">大家还看了这些</div>
+            <div class="lower4">
+               <img src="image/lowerleft1.jpg">
+               <p class="lower4_1">￥ 6,715</p>
+               <p>古驰Gucci-G-Timeless系列 YA1264080 石英男表</p>
+               <img src="image/lowerleft2.jpg">
+               <p class="lower4_1">￥ 4,215</p>
+               <p>英纳格Enicar-石英系列 2528/40/01ACA 男士石英表</p>
+               <img src="image/lowerleft3.jpg">
+               <p class="lower4_1">￥ 7,055</p>
+               <p>古驰Gucci-G-Timeless系列 YA1264080 石英男表</p>
+               <img src="image/lowerleft4.jpg">
+               <p class="lower4_1">￥ 8,910</p>
+               <p>豪利时 Oris-文化系列 733-7719-4375M 自动机械男表</p>
+            </div>
+         </div>
+         <div class="lower_right">
+             <div class="flower">
+                <ul>
+                  <li>商品详情</li>
+                  <li>规格参数</li>
+                  <li>售后服务</li>
+                  <li>线下体验</li>
+                  <li>客户评价</li>
+                </ul>
+             </div>
+             <div class="flower2">
+                <p>温馨提示</p>
+                <p>商品展示区划去的价格为品牌建议零售价，并非原价；万表价为商品实时售价，欢迎比较购买！</p>
+             </div> 
+             <div class="flower3"> 
+                <img src="image/flowerright1.jpg">
+             </div> 
+             <div class="flower4">
+                <img src="image/flowerright2.jpg">
+                <img src="image/flowerright3.jpg">
+                <img src="image/flowerright4.jpg">
+                <img src="image/flowerright5.jpg">
+                <img src="image/flowerright6.jpg">
+               
+                <img src="image/flowerright9.jpg">
+             </div>
+         </div>
+      </div>
+    </div>
+    <footer id="footer" class="footer_top">
+    </footer>
+          <script src="js/jquery-3.2.1.js"></script>
+          <script src="js/vue.js"></script>
+          <script src="js/footer.js"></script>
+</body>
+</html>

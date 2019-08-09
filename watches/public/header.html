@@ -1,0 +1,51 @@
+  <header id="header" class="watch_top">
+        <div class="t_top">
+           <a id="a1" href="#">正品保障,免息分期！</a>
+           <a href="#">请登录</a>
+           <a id="a2" href="#">注册即送3500元大礼包</a>
+           <a href="#">购物车</a>
+           <a href="#">客服服务</a>
+           <a href="#">会员福利</a>
+           <a href="#">会员福利</a>
+           <a href="#">ENGLISH</a>
+          </div>
+        <div class="t_center">
+            <a href="#"><img src="image/logo-icon.png"></a>
+            <a href="#"><img src="image/slogan.png"></a>
+              <input type="text" placeholder="请输入要搜索的商品">
+              <button>搜索</button>
+              <a href="#"><img class="a3" src="image/二维码.png"></a>
+          </div>
+        <div class="t_footer">
+            <a class="a4" href="#">全部商品</a>
+              <ul>
+                  <li><a href="#">男表</a></li>
+                  <li><a href="#">女表</a></li>
+                  <li><a href="#">品牌馆</a></li>
+                  <li><a href="#">闪购</a></li>
+                  <li><a href="#">体验中心</a></li>
+                  <li><a href="#">名匠维修</a></li>
+                  <li><a href="#">二手拍卖</a></li>
+                  <li><a href="#">万表共享</a></li>
+                  <li><a href="#">手表资讯</a></li>
+              </ul>	
+          </div>
+        </header>
+<script src="js/jquery-3.2.1.js"></script>
+   <script>
+      //获取导航栏到顶部的距离
+      var oTop=$(".t_footer").offset().top
+      //获取导航栏的高度
+      var martop=$(".t_footer").outerHeight()
+      var sTop=0
+      $(window).scroll(function(){
+        sTop=$(this).scrollTop()
+        if(sTop>oTop){
+          $(".t_footer").css({"position":"fixed","top": "0","z-index":10000,"left":"18.5%","background":"#eee"})
+          $(".quan").css({"margin-top":martop})
+        }else{
+          $(".t_footer").css({"position":"static","background":"#fff"})
+          $(".quan").css({"margin-top":0})
+        }
+      })
+   </script>

@@ -1,0 +1,257 @@
+*{margin:0;padding:0}
+/*网页整个顶部*/
+.watch_top{
+    width:100%;
+    background:#F4F4F4;
+   }
+   /*大div的三个小div*/
+   .t_top{
+    margin:auto;
+    width:990px;
+   }
+   /*最上面的div*/
+   .t_top{
+    height:28px;
+   }
+   /*上div的a标签样式*/
+   .t_top a{
+    float:left;
+    line-height:28px;
+    text-decoration:none;
+    color:#999;
+    font-size:12px;
+    padding:0 10px;
+   }
+   .t_top #a1{
+    color:#ac9c5b;
+    margin-right:325px;
+   }
+   .t_top #a2{
+    color:red;
+   }
+   /*logo布局以及样式*/
+   .watch_logo1{
+    width:990px;
+    margin:auto;
+    height:95px;
+    display: flex;
+   }
+   /*订单流程图*/
+   .watch_logo1 a img{
+    line-height: 95px;
+    margin-left: 25px;
+   }
+   .watch_logo1 ul{
+    height:11px;
+    width:460px;
+    list-style: none;
+    border-top:1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top:10px; 
+    margin-left:150px;
+   }
+   .watch_logo1 ul li{
+     position: relative;
+     text-align: center;
+   }
+   .watch_logo1 ul li:last-child{
+    position: relative;
+    left:28px;
+   }
+   .watch_logo1 ul li i{
+    position: absolute;
+    bottom:-5px;
+    margin-left:-20px;
+    width: 8px;height:8px;
+    border:2px solid #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    text-align: center
+   }
+ 
+   .watch_logo1 ul li span{
+    display: block;
+    font-size: 12px;
+    color:#999;
+   }
+   .dian{
+    border:4px solid #cc5252 !important;
+    box-shadow: 7px 1px 1px 1px #cc5252 inset;
+   }
+   .hao{
+     color:#cc5252 !important;
+     font-size: 14px !important;
+     font-weight: 600;
+   }
+   /*选项上表单*/
+   .watch_center{
+     width:990px;
+     margin:auto;
+     margin-top:40px;
+   }
+   .center_1{
+     width:990px;height:34px;
+     display: flex;
+     background:#f5f5f5;
+     margin: 20px 0;
+   }
+   .center_1 input{
+     height:34px;
+     line-height: 34px;
+     margin-left: 15px;
+   }
+   .center_1 span{
+     display: block;
+     width:100px;
+     height:34px;
+     line-height: 34px;
+     font-size: 12px;
+     color:#666;
+     margin-left: 20px;
+   }
+   .center_1 ul{
+     width:576px;
+     display: flex;
+     justify-content: space-around;
+     list-style:none;
+     margin-left: 300px;
+   }
+   .center_1 ul li{
+     line-height: 34px;
+     font-size: 12px;
+     color:#666
+   }
+  /*选项中表单*/
+   .center_2{
+     width:990px;height:204px;
+     border:1px solid #f5f5f5;
+     margin-bottom: 20px;
+   }
+   .center_2_1{
+     height:45px;
+     background:#f5f5f5;
+   }
+   .center_2_1 input{
+     height:45px;
+     line-height: 45px;
+     margin-left: 15px;
+   }
+   .center_2_1 a{
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: 600;
+     color:#666;
+     position: relative;
+     bottom:18px;left:15px;
+   }
+   .center_2_1 span{
+     position: relative;
+     left:757px;bottom:18px;
+     font-size: 12px;
+     color:#cc5252;
+     padding:3px 14px;
+     border: 1px solid #cc5252;
+     border-radius: 100px;
+   }
+   .xia{
+     margin-left: 50px;
+     font-size: 12px;
+     display:block;
+     width:940px;height:37px;
+     border-bottom: 1px solid #eee;
+     text-decoration: none;
+     line-height: 37px;
+   }  
+   .center_2_2 a span:first-child{
+    background: #cc5252;
+    border-radius: 100px;
+    color: #fff;
+    padding: 0 7px;
+   }
+   .center_2_2 a span:last-child{
+    color: #999;
+    display: inline-block;
+    margin-left: 10px;
+   }
+   .center_3_1{
+     display: flex;
+   }
+   .center_3_1 img{
+    margin-left: 25px;
+   }
+   .center_4{
+     display: inline-block;
+     width:250px;
+     position: relative;
+     bottom:0px;left:35px;
+   }
+   .center_4 p{
+    font-size: 12px;
+    color:#666
+   } 
+   .check1{
+     position: relative;
+     top:50px;left: 15px;
+   }
+   .center_3 ul{
+     display: flex;
+     justify-content: space-around;
+     list-style: none;
+     width:440px;height:20px;
+     margin-left:170px;
+   }
+   .center_3 ul li{
+     font-size: 12px;
+   }
+   .center_3 ul li:last-child{
+     margin-left: 5px;
+   }
+   .center_3 ul input{
+     width:35px;height:18px;
+     text-align: center;
+   }
+   .center_3 ul button{
+     width:16px;height:18px;
+   }
+   .center_3 ul li:nth-child(3){
+     font-weight: 600;
+   }
+   .center_3 ul li a{
+     color:#999;
+     text-decoration: none;
+   }
+   .center_6{
+     margin-bottom: 100px;
+   }
+   .center_6 ul{
+     display: flex;
+     height:60px;
+     list-style:none;
+     line-height: 60px;
+     background:#f5f5f5;
+   }
+   .center_6 ul li{
+     color:#999;
+     font-size: 12px;
+     margin-left:18px;
+   }
+   .center_6 ul li:nth-child(6){
+     margin-left: 170px;
+   }
+   .center_6 ul li:nth-child(7){
+    margin-left: 233px;
+   }
+
+   .center_6 ul li:last-child a{
+    width:185px; 
+    display: inline-block;
+    background:#cc5252;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600
+   }

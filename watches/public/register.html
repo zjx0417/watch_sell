@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>注册页面</title>
+	<link rel="stylesheet" href="css/register.css">
+ </head>
+ <body>
+ <div class="big">
+  <table></table>
+	<h6><a href="#"><img src="img/logo.png"><img src="img/slogan.png"></a></h6>
+  <div class="small">
+  <table>
+	 <tr>
+	 	<td class="new"><h4>注册万表会员</h4></td>
+	 </tr>
+	 <tr>
+	 	<td><input type="text" id="phone" placeholder="请输入手机号码"></td><br>
+		<span id="s1"></span>
+	 </tr>
+	 <tr>
+	 	<td><input type="text" placeholder="请输入图形验证码">
+		</td>
+	 </tr>
+	 <tr>
+	 	<td><input type="text" placeholder="请输入短信验证码"></td>
+	 </tr>
+	 <tr>
+	 	<td><input onblur="car_upwd()" type="password" placeholder="请输入密码" id="upwd"><br>
+		<span id="s2"></span> 
+		</td>
+	 </tr>
+	 <tr>
+	  <td><input onblur="car_upwd2()" type="password" placeholder="请再次确认密码" id="upwd2"><br>
+		<span id="s3"></span>
+		</td>
+	 </tr>
+	 <tr>
+	  <td class="register"><input onclick="register()" type="button" value="立即注册"></td>
+	 </tr>
+	 <tr>
+	 	<td class="footer">点击“立即注册”，即表示您同意并愿意遵守<a href="#">万表网用户协议</a></td>
+	 </tr>	
+	</table>
+	</div>
+ </div>
+	<script>
+		function car_upwd(){
+		  if (upwd.value)
+		  {
+			  s2.innerHTML="密码输入正确"
+		  }else{
+			  s2.innerHTML="密码不能为空"
+			}
+		}
+		function car_upwd2(){
+		  if (upwd2.value==upwd.value)
+		  {
+			  s3.innerHTML="密码输入一致"
+		  }else{
+			  s3.innerHTML="密码不一致,请重新输入"
+			}
+		}
+		function register(){
+	   var $phone=phone.value
+		 var $upwd=upwd.value
+		    var xhr=new XMLHttpRequest()
+				xhr.onreadystatechange=function(){
+			  if (xhr.readyState==4&&xhr.status==200){
+              var result=xhr.responseText 
+					if ((upwd2.value==upwd.value)&&result=="1")
+					{						
+						alert("注册成功")
+					 location.href="login.html"
+					}else{
+					  alert("注册失败")
+					}
+			  }	
+			}
+			xhr.open("post","http://127.0.0.1:8080/user/register",true)
+			var formdata="phone="+$phone+"&upwd="+$upwd
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+			xhr.send(formdata)
+		}
+	</script>
+ </body>
+</html>

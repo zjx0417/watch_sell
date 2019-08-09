@@ -1,0 +1,110 @@
+*{margin:0;padding:0}
+body{
+    min-width: 1500px;
+}
+   /*表头以下商品列表*/
+   .watch_product{
+       width:100%;
+       background:#D9E7F2;
+   }
+   #a6,#a7,#a8,#a9,#a10{
+       display: block;
+       width:100%;
+       display: flex;
+       justify-content: center;
+   }  
+  
+   .watch_pro1{
+       width:1200px;
+       margin:auto;
+       background:#fff;
+       padding-bottom: 20px;
+   }
+   .watch_pro1::after{
+       content:"";
+       display: block;
+       clear: both;
+   }
+   .watch_pro1>ul{
+       list-style: none;
+       display: flex;
+       justify-content: space-around;
+   }
+   .watch_pro1>ul>li{
+       width:243px;
+       height:450px;
+       margin-left:50px;
+       overflow: hidden;
+       box-sizing: border-box;
+   }
+   .watch_pro1>ul>li:hover{
+     
+       border:1px solid #eee;
+       box-shadow: 0px 1px 2px 3px #eee;
+   }
+   .watch_pro1>ul>li:hover .scgwc{
+       display:block;
+   }
+   .watch_pro1>ul>li>a>img{
+      position: relative;
+      right:20px;
+      top:20px;
+   }
+   .watch_pro1>ul>li>p{
+    margin-top: 20px;
+   }
+   .p1 span:first-child{
+       font-size: 18px;
+       color:#333;
+       font-family:"黑体";
+   }
+   .p1 span:last-child{
+       float:right;
+       font-size: 12px;
+       color:#666;
+   }
+   .p2{
+       font-size: 12px;
+       color:#666;
+   }
+   .c1{
+       color:#c6a461;
+       border:1px solid #c6a461;
+       border-radius: 100px;
+       font-size: 12px;
+       padding:3px 7px;
+   }
+   .scgwc{
+       width:203px;height:35px;
+       margin:auto;
+       line-height: 35px;
+       border:1px solid #eee;
+       box-sizing: border-box;
+       display: none;
+   }
+   .sc{
+       display: block;
+       float: left;
+       width:50%;height:35px;
+       text-align: center;
+       font-size: 12px;
+       box-sizing: border-box;
+       text-decoration: none;
+       border: 1px solid #eee;
+       color:#333;
+   }
+   .gwc{
+       display: block;
+       float: left;
+       width:50%;height:35px;
+       text-align: center;
+       color:red;
+       font-size: 12px;
+       box-sizing: border-box;
+       text-decoration: none;
+       border: 1px solid #eee;
+   }
+ 
+
+
+ 
